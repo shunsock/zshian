@@ -1,4 +1,4 @@
-# Zashian
+# Zshian
 
 - This repository is my setting files related to `.zshrc`
 - You can install and use if you want
