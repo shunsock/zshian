@@ -1,0 +1,15 @@
+name: test on macos-latest
+on:
+  pull_request:
+    branches: [main, dev]
+jobs:
+  test-on-macos-latest:
+    name: installing-test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sh init.sh
+      - run: sh update.sh
+        shell: zsh {0}
+      - run: source ~/.zshrc
+        shell: zsh {0}
