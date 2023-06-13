@@ -110,6 +110,6 @@ gcm_search_command (){
     echo "ERROR: the number of input must be 1"
     exit 1
   fi
-  cat ~/zsh_config/doc/gcm_command_name.txt | grep $1
+  cat ~/.zsh/doc/gcm_command_name.txt | grep $1
 }
 
