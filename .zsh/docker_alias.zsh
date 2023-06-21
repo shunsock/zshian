@@ -36,7 +36,6 @@ function dlog() {
 
 
 ### Docker Compose
-alias dcm='docker compose '
 alias dcmd='docker compose down'
 
 function dcmu() {
