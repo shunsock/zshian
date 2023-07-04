@@ -30,7 +30,7 @@ gcm () {
     "add_test" ) icon=":white_check_mark: [add test] => :" ;;
     "add_types" ) icon=":label: [add types] => " ;;
     "add_ui" ) icon=":lipstick: [add ui] => " ;;
-    "add_validation_code" ) icon=":safety_vast: [add validation code] => " ;;
+    "add_validation_code" ) icon=":safety_vest: [add validation code] => " ;;
     "begin_a_project" ) icon=":tada: [begin a project] => " ;;
     "catch_errors" ) icon=":goal_net: [catch errors] => " ;;
     "critical_hotfix" ) icon=":ambulance: [critical hotfix] => " ;;
