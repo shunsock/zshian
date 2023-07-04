@@ -1,0 +1,11 @@
+gad,git add .
+gamd,git commit --amend
+gbr,git branch
+gbrr,git branch -r
+gcb,git checkout -b 
+gcr,git rm -r --cached
+gpull,git pull origin
+gpush,git push origin
+greset,git reset
+gst,git status
+gsw,git switch 
