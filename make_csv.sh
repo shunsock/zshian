@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove lines starting with '#'
-grep -v '^#' .zsh/git_alias.zsh | \
+grep -v '^#' .zsh/git/alias.zsh | \
 # Remove 'alias ' at the start of each line
 perl -pe 's/^alias //' | \
 # Replace '=' with ','
