@@ -30,7 +30,7 @@ gcm () {
     "add_test" ) icon=":white_check_mark: [add test] => :" ;;
     "add_types" ) icon=":label: [add types] => " ;;
     "add_ui" ) icon=":lipstick: [add ui] => " ;;
-    "add_validation_code" ) icon=":safety_vast: [add validation code] => " ;;
+    "add_validation_code" ) icon=":safety_vest: [add validation code] => " ;;
     "begin_a_project" ) icon=":tada: [begin a project] => " ;;
     "catch_errors" ) icon=":goal_net: [catch errors] => " ;;
     "critical_hotfix" ) icon=":ambulance: [critical hotfix] => " ;;
@@ -38,7 +38,7 @@ gcm () {
     "data_inspection" ) icon=":monocle_face: [data inspection] => " ;;
     "deploy_stuff" ) icon=":rocket: [deploy stuff] => " ;;
     "downgrade_dependencies" ) icon=":arrow_down: [downgrade dependencies] =>:" ;;
-    "fix_a_bag" ) icon=":bug: [fix a bug] => " ;;
+    "fix_a_bug" ) icon=":bug: [fix a bug] => " ;;
     "fix_ci_build" ) icon=":green_heart: [fix ci build] => " ;;
     "fix_compiler" ) icon=":rotating_light: [fix compiler] => " ;;
     "fix_for_non_critical_issue" ) icon=":adhesive_bandage: [fix for non critical issue] => " ;;
@@ -110,6 +110,6 @@ gcm_search_command (){
     echo "ERROR: the number of input must be 1"
     exit 1
   fi
-  cat ~/zsh_config/doc/gcm_command_name.txt | grep $1
+  cat ~/.zsh/doc/gcm_command_name.txt | grep $1
 }
 
