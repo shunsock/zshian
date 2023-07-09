@@ -1,0 +1,13 @@
+his,history -i
+cd2,cd ../..
+cd3,cd ../../..
+so,source
+l,ls -Fh
+la,ls -Fha
+ll,ls -Fhaln
+lls,ls -FhalnS
+lk,ls -Fhk
+v,vim
+vi,vim
+df,df -kh
+du,du -kh
