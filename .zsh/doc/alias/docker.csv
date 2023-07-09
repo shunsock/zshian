@@ -1,0 +1,11 @@
+d,docker
+dcn,docker container
+dcmd,docker compose down
+dcm,docker compose
+dcmu,docker compose up -d
+dcopy,docker cp 
+dexec,docker exec 
+dimg,docker image
+dprune,docker system prune -f
+drmi,docker rmi -f
+dstop,docker stop
