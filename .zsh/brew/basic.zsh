@@ -12,9 +12,10 @@ if type brew &>/dev/null; then
   autoload -Uz colors && colors
   autoload -Uz add-zsh-hook
 fi
+
+
 # Delete the empty character immediately before the completion entered in zsh-completion
 ZLE_REMOVE_SUFFIX_CHARS=$'' # add space after completion
-
 
 
 # PROMPT SETTING #
@@ -29,18 +30,22 @@ ZLE_REMOVE_SUFFIX_CHARS=$'' # add space after completion
 # %#                      : show "#" if you are root, else show %
 # if brew list | grep ~   : if ~ exists, return true
 # add-zsh-hook precmd     : if
-alias python="python3"
 
+alias python="python3"
 git_prompt() {
+  newline=$'\n'
+  user_name="%F{green}%n:%f"
+  system_architecture="%F{cyan}⚙️ ($(arch));%f"
+  date_time="%F{yellow}%D %T %f"
+  current_directory="%F{blue}%~%f"
+  git_status="%F{blue}git%f$(git_super_status)"
+  endline="%F{green}↣ %f%# "
+
   # if .git exists show it
   if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = true ]; then
-    PROMPT="%F{green}🖱️ : %n%f 🔧: %F{cyan}($(arch))%f ⏰: %F{yellow}%D %T%f
-📍: %F{blue}%~%f  🌿: $(git_super_status)
-%F{green}>> %f %# "
+    PROMPT="$user_name $system_architecture $date_time $newline""$current_directory $git_status $endline"
   else
-    PROMPT="%F{green}🖱️ : %n%f 🔧: %F{cyan}($(arch))%f ⏰: %F{yellow}%D %T%f
-📍: %F{blue}%~%f
-%F{green} >> %f %# "
+    PROMPT="$user_name $system_architecture $date_time $newline""$current_directory $endline"
   fi
 }
 
